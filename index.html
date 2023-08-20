@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/project.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+       <title>Document</title>
+       <link rel="stylesheet" href="./index_files/sty.css">
+       
+</head>
+<body>
+    <header>
+       <div class="user">
+       <img src="./index_files/photo.jpg">
+       <h5 class="nm">Manjunath K</h5> 
+       <p class="jb">Student</p>
+       </div>
+       <nav class="nv">
+          <ul>
+             <li><a href="http://127.0.0.1:5500/project.html#Details">Details</a></li>
+             <li><a href="http://127.0.0.1:5500/project.html#Education">Education</a></li>
+             <li><a href="http://127.0.0.1:5500/project.html#Technical%20Skills">Technical Skills</a></li>
+             <li><a href="http://127.0.0.1:5500/project.html#Project">Project</a></li>
+          </ul>
+       </nav>
+    </header>
+    <section class="Details" id="Details">
+        <h1 class="heading"><span>Details about me</span></h1>
+        <div class="Row">
+        <div class="det">
+             <h3><span>Name: </span>Manjunath K</h3>
+             <h3><span>Age: </span>24</h3>
+             <h3><span>Gender: </span>male</h3>
+             <h3><span>Email: </span>manjunathkamannavar2000@gmail.com.com</h3>
+             <h3><span>Phone_no: </span>9449804463</h3>    
+        </div>
+    </div>
+    </section>
+<section class="Education" id="Education">
+    <h1 class="title"><span>Education</span></h1><br><br><br>
+    <table>
+        <tbody><tr>
+            <th>Cource</th>
+            <th>Name of the institude</th>
+            <th>University</th>
+            <th>Percentage</th>
+        </tr>
+        <tr>
+            <td>SSLC</td>
+            <td>JSS High School</td>
+            <td>Karnataka Board</td>
+            <td>90.56%</td>
+        </tr>
+        <tr>
+            <td>PUC</td>
+            <td>Prism PU College</td>
+            <td>Karnataka Board</td>
+            <td>74.16%</td>
+        </tr>
+        <tr>
+            <td>BE</td>
+            <td>KLS VDIT</td>
+            <td>VTU</td>
+            <td>7.53 CGPA</td>
+        </tr>
+    </tbody></table>
+</section>
+<br><br><br><br><br><br>
+<section class="Technical Skills" id="Technical Skills">
+    <h1 class="head"><span>Technical Skills</span></h1>
+    <div>
+    <ul id="lis">
+        <li>Java</li>
+        <li>C++</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Oracle</li>
+        <li>MySQL</li>
+        <li>Manual Testing</li>
+        <li>Automation Testing</li>
+        <li>Data Structures</li>
+    </ul>
+</div>
+</section>
+<section class="Project" id="Project">
+    <h1 class="heading"><span>Project</span></h1>
+    <div class="Row">
+        <div class="det">
+    <h3><span>Role: </span>Team Leader</h3>
+    <h3><span>Title: </span>Full Stack Developer</h3>
+    <h3><span>Description: </span>A professional responsible fpr working on both front-end 
+        and back-end development processes. </h3>
+            </div>
+</div>
+</section>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
